@@ -16,19 +16,20 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.composetest.ui.theme.ComposeTestTheme
+import com.example.composetest.ui.theme.TextTheme
 
 class TextActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ComposeTestTheme {
-                Greeting(name = "Android")
+            TextTheme {
+                TextExample(name = "Android")
             }
         }
     }
 
     @Composable
-    fun Greeting(name: String) {
+    fun TextExample(name: String) {
         //Text(text = "Hello $name!")
 
         // 스텝 1: 색상을 지정하기 위해 color 파라미터에 Color.Red를 전달해봅시다.
@@ -119,8 +120,8 @@ class TextActivity : ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun GreetingPreview() {
-        ComposeTestTheme {
-            Greeting("Android")
+        TextTheme {
+            TextExample("Android")
         }
     }
 }
