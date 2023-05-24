@@ -70,71 +70,7 @@ fun ComposeTestTheme(
 }
 
 @Composable
-fun TextTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = if (darkTheme) {
-        DarkColorScheme
-    } else {
-        LightColorScheme
-    }
-
-    MaterialTheme(
-        colorScheme = colors,
-        typography = Typography,
-        shapes = Shapes,
-        content = content
-    )
-}
-
-@Composable
-fun ButtonTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = if (darkTheme) {
-        DarkColorScheme
-    } else {
-        LightColorScheme
-    }
-
-    MaterialTheme(
-        colorScheme = colors,
-        typography = Typography,
-        shapes = Shapes,
-        content = content
-    )
-}
-
-@Composable
-fun ModifierTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = if (darkTheme) {
-        DarkColorScheme
-    } else {
-        LightColorScheme
-    }
-
-    MaterialTheme(
-        colorScheme = colors,
-        typography = Typography,
-        shapes = Shapes,
-        content = content
-    )
-}
-
-@Composable
-fun SurfaceTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = if (darkTheme) {
-        DarkColorScheme
-    } else {
-        LightColorScheme
-    }
-
-    MaterialTheme(
-        colorScheme = colors,
-        typography = Typography,
-        shapes = Shapes,
-        content = content
-    )
-}
-
-@Composable
-fun BoxTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
+fun ComposeTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
     val colors = if (darkTheme) {
         DarkColorScheme
     } else {

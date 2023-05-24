@@ -14,13 +14,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.composetest.ui.theme.SurfaceTheme
+import com.example.composetest.ui.theme.ComposeTheme
 
 class SurfaceActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            SurfaceTheme {
+            ComposeTheme {
                 SurfaceExample("Android")
             }
         }
@@ -104,7 +104,7 @@ fun SurfaceExample(name: String) {
 @Preview(showBackground = true)
 @Composable
 fun SurfacePreview() {
-    SurfaceTheme {
+    ComposeTheme {
         SurfaceExample("Android")
     }
 }

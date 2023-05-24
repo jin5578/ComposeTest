@@ -20,13 +20,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.composetest.ui.theme.ButtonTheme
+import com.example.composetest.ui.theme.ComposeTheme
 
 class ButtonActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ButtonTheme {
+            ComposeTheme {
                 ButtonExample(onButtonClicked = {
                     Toast.makeText(this, "Send clicked.", Toast.LENGTH_SHORT).show()
                 })
@@ -141,7 +141,7 @@ fun ButtonExample(onButtonClicked: () -> Unit) {
 @Preview(showBackground = true)
 @Composable
 fun ButtonPreview() {
-    ButtonTheme {
+    ComposeTheme {
         ButtonExample(onButtonClicked = {})
     }
 }
