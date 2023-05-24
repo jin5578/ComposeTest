@@ -101,3 +101,19 @@ fun ButtonTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable
         content = content
     )
 }
+
+@Composable
+fun ModifierTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
+    val colors = if (darkTheme) {
+        DarkColorScheme
+    } else {
+        LightColorScheme
+    }
+
+    MaterialTheme(
+        colorScheme = colors,
+        typography = Typography,
+        shapes = Shapes,
+        content = content
+    )
+}
