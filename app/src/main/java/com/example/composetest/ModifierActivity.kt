@@ -210,7 +210,7 @@ fun ModifierExample() {
 
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() {
+fun ModifierPreview() {
     ModifierTheme {
         ModifierExample()
     }

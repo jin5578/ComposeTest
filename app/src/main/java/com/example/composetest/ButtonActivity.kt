@@ -33,115 +33,115 @@ class ButtonActivity : ComponentActivity() {
             }
         }
     }
+}
 
-    @Composable
-    fun ButtonExample(onButtonClicked: () -> Unit) {
-        /*Button(onClick = {}) {
-            Text(text = "Send")
-        }*/
+@Composable
+fun ButtonExample(onButtonClicked: () -> Unit) {
+    /*Button(onClick = {}) {
+        Text(text = "Send")
+    }*/
 
-        // 스탭 1: Button을 클릭했을 때 Toast를 출력하게 만들어봅시다.
-        /*Button(onClick = onButtonClicked) {
-            Text(text = "Send")
-        }*/
+    // 스탭 1: Button을 클릭했을 때 Toast를 출력하게 만들어봅시다.
+    /*Button(onClick = onButtonClicked) {
+        Text(text = "Send")
+    }*/
 
-        // 스탭 2: Icon을 Text 앞에 추가시켜봅시다.
-        // imageVector에는 Icons.Filled.Send를 넣고
-        // contentDescription에는 null을 넣어봅시다.
-        /*Button(onClick = onButtonClicked) {
-            Icon(
-                imageVector = Icons.Filled.Send,
-                contentDescription = null
-            )
-            Text(text = "Send")
-        }*/
+    // 스탭 2: Icon을 Text 앞에 추가시켜봅시다.
+    // imageVector에는 Icons.Filled.Send를 넣고
+    // contentDescription에는 null을 넣어봅시다.
+    /*Button(onClick = onButtonClicked) {
+        Icon(
+            imageVector = Icons.Filled.Send,
+            contentDescription = null
+        )
+        Text(text = "Send")
+    }*/
 
-        // 스탭 3: 아이콘과 텍스트 사이에 Spacer를 넣어봅시다.
-        // modifier에 Modifier.size를 넣고 사이즈를
-        // ButtonDefaults.IconSpacing을 지정합시다.
-        /*Button(onClick = onButtonClicked) {
-            Icon(
-                imageVector = Icons.Filled.Send,
-                contentDescription = null
-            )
-            Spacer(
-                modifier = Modifier.size(ButtonDefaults.IconSpacing)
-            )
-            Text(text = "Send")
-        }*/
+    // 스탭 3: 아이콘과 텍스트 사이에 Spacer를 넣어봅시다.
+    // modifier에 Modifier.size를 넣고 사이즈를
+    // ButtonDefaults.IconSpacing을 지정합시다.
+    /*Button(onClick = onButtonClicked) {
+        Icon(
+            imageVector = Icons.Filled.Send,
+            contentDescription = null
+        )
+        Spacer(
+            modifier = Modifier.size(ButtonDefaults.IconSpacing)
+        )
+        Text(text = "Send")
+    }*/
 
-        // 스탭 4: enabled를 false로 바꾸어봅시다.
-        /*Button(
-            onClick = onButtonClicked,
-            enabled = true
-        ) {
-            Icon(
-                imageVector = Icons.Filled.Send,
-                contentDescription = null
-            )
-            Spacer(
-                modifier = Modifier.size(ButtonDefaults.IconSpacing)
-            )
-            Text(text = "Send")
-        }*/
+    // 스탭 4: enabled를 false로 바꾸어봅시다.
+    /*Button(
+        onClick = onButtonClicked,
+        enabled = true
+    ) {
+        Icon(
+            imageVector = Icons.Filled.Send,
+            contentDescription = null
+        )
+        Spacer(
+            modifier = Modifier.size(ButtonDefaults.IconSpacing)
+        )
+        Text(text = "Send")
+    }*/
 
-        // 스탭 5: border에 BorderStroke를 설정합시다.
-        /*Button(
-            onClick = onButtonClicked,
-            enabled = true,
-            border = BorderStroke(10.dp, Color.Magenta)
-        ) {
-            Icon(
-                imageVector = Icons.Filled.Send,
-                contentDescription = null
-            )
-            Spacer(
-                modifier = Modifier.size(ButtonDefaults.IconSpacing)
-            )
-            Text(text = "Send")
-        }*/
+    // 스탭 5: border에 BorderStroke를 설정합시다.
+    /*Button(
+        onClick = onButtonClicked,
+        enabled = true,
+        border = BorderStroke(10.dp, Color.Magenta)
+    ) {
+        Icon(
+            imageVector = Icons.Filled.Send,
+            contentDescription = null
+        )
+        Spacer(
+            modifier = Modifier.size(ButtonDefaults.IconSpacing)
+        )
+        Text(text = "Send")
+    }*/
 
-        // 스탭 6: shape를 CircleShape로 지정합시다.
-        /*Button(
-            onClick = onButtonClicked,
-            enabled = true,
-            border = BorderStroke(10.dp, Color.Magenta),
-            shape = CircleShape
-        ) {
-            Icon(
-                imageVector = Icons.Filled.Send,
-                contentDescription = null
-            )
-            Spacer(
-                modifier = Modifier.size(ButtonDefaults.IconSpacing)
-            )
-            Text(text = "Send")
-        }*/
+    // 스탭 6: shape를 CircleShape로 지정합시다.
+    /*Button(
+        onClick = onButtonClicked,
+        enabled = true,
+        border = BorderStroke(10.dp, Color.Magenta),
+        shape = CircleShape
+    ) {
+        Icon(
+            imageVector = Icons.Filled.Send,
+            contentDescription = null
+        )
+        Spacer(
+            modifier = Modifier.size(ButtonDefaults.IconSpacing)
+        )
+        Text(text = "Send")
+    }*/
 
-        // 스탭 7: contentPadding에 PaddingValues를 설정합시다.
-        Button(
-            onClick = onButtonClicked,
-            enabled = true,
-            border = BorderStroke(10.dp, Color.Magenta),
-            shape = CircleShape,
-            contentPadding = PaddingValues(20.dp)
-        ) {
-            Icon(
-                imageVector = Icons.Filled.Send,
-                contentDescription = null
-            )
-            Spacer(
-                modifier = Modifier.size(ButtonDefaults.IconSpacing)
-            )
-            Text(text = "Send")
-        }
+    // 스탭 7: contentPadding에 PaddingValues를 설정합시다.
+    Button(
+        onClick = onButtonClicked,
+        enabled = true,
+        border = BorderStroke(10.dp, Color.Magenta),
+        shape = CircleShape,
+        contentPadding = PaddingValues(20.dp)
+    ) {
+        Icon(
+            imageVector = Icons.Filled.Send,
+            contentDescription = null
+        )
+        Spacer(
+            modifier = Modifier.size(ButtonDefaults.IconSpacing)
+        )
+        Text(text = "Send")
     }
+}
 
-    @Preview(showBackground = true)
-    @Composable
-    fun DefaultPreview() {
-        ButtonTheme {
-            ButtonExample(onButtonClicked = {})
-        }
+@Preview(showBackground = true)
+@Composable
+fun ButtonPreview() {
+    ButtonTheme {
+        ButtonExample(onButtonClicked = {})
     }
 }
